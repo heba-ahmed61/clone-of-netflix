@@ -1,13 +1,77 @@
-body {
+*{
+
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body{
+  background-color: #111;
+}
+.nav-content {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav{
+
+  position: fixed;
+  top: 0;
+  transition:all .5s ease;
+}
+.nav-black{
+
+  background-color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.image-poster{
+
+  width:100% ;
+  height: 100px;
+  object-fit: contain;
+  margin-right: 10px;
+  transition: transform 450ms;
+  cursor: pointer;
+  
+
+
+}
+.images-large-poster{
+
+  width: 100%;
+  max-height: 350px;
+  object-fit: contain;
+
+}
+
+.images-large-poster:hover{
+
+  transform: scale(1.03);
+  opacity: 1;
+  transition: transform 450ms;
+}
+.images-poster:hover{
+
+  transform: scale(1.08);
+  opacity:1;}
+
+  .images-poster{
+
+    cursor: pointer;
+    transition: transform 450ms;
+    max-height: 100px;
+    width: 100%;
+    object-fit: contain;
+  }
+.answer-hidden{
+display: none;
+  opacity: 0;
+}
+
+.answer-show{
+  display: block;
+  transition: all .5s ease;
+  opacity:1
 }
