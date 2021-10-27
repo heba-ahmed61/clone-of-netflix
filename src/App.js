@@ -5,7 +5,7 @@ import Home from './Pages/Home/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Profile from './Components/Profile/Profile';
 import {
-  BrowserRouter,
+  HashRouter,
   Switch,
   Route,
 } from "react-router-dom";
@@ -46,7 +46,7 @@ function App() {
 
     <App>
       
-      <BrowserRouter>
+      <HashRouter>
       {!user ? (<Login/>):
       (
         <Switch>
@@ -61,7 +61,7 @@ function App() {
       <Footer/>
     
   
-      </BrowserRouter>
+      </HashRouter>
       
     </App>
     
